@@ -1,30 +1,39 @@
-# GitHub Explorer
+# GitHub User Search
 
-A sleek and interactive web app to search GitHub users and explore their profiles and repositories.
+A simple and elegant web application to search for GitHub users and explore their public profile details and repositories.
 
 ## Features
 
-- Search for any GitHub user by username
-- View user profile details including avatar, join date, location, company, Twitter handle
-- Display key stats: public repos, followers, following
-- List the top 10 most recently updated repositories with name, description, stars, and forks
-- Responsive design with smooth animations and modern UI
-
-## Demo
-
-![Screenshot](./screenshot.png)  
-*Replace with your project screenshot*
+- Search GitHub users by username
+- View user details: avatar, username, join date, location, company, and Twitter handle
+- See key stats: public repositories, followers, and following
+- Display the 10 most recently updated repositories
+- Smooth animations and responsive UI
 
 ## Technologies Used
 
-- HTML5 & CSS3 (with Flexbox and animations)
-- JavaScript (Fetch API for GitHub API requests)
-- Font Awesome icons for UI embellishments
+- HTML5 & CSS3
+- JavaScript (Fetch API)
+- Font Awesome (for icons)
+- GitHub REST API
 
-## Getting Started
+## How It Works
 
-1. Clone the repository:
+1. Enter a GitHub username in the search bar.
+2. Click **Search**.
+3. The app fetches and displays the user’s profile and a list of repositories.
 
-```bash
-git clone https://github.com/yourusername/github-explorer.git
-cd github-explorer
+## Notes
+
+- This app uses GitHub’s public API and may be subject to rate limits.
+- Repositories displayed are limited to the 10 most recently updated.
+
+## Future Enhancements
+
+- Add pagination for repositories
+- Implement light/dark theme toggle
+- Improve error handling for edge cases
+
+## License
+
+This project is licensed under the MIT License.
