@@ -34,6 +34,4 @@ A simple and elegant web application to search for GitHub users and explore thei
 - Implement light/dark theme toggle
 - Improve error handling for edge cases
 
-## License
 
-This project is licensed under the MIT License.
