@@ -1,0 +1,354 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Update the title styles */
+/* Title Styles */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.title-gradient {
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.title span {
+    color: #fc00ff; /* Solid pink color */
+    display: inline-block;
+    animation: bounce 2s infinite;
+    text-shadow: 0 0 10px rgba(252, 0, 255, 0.5);
+}
+
+
+/* Rest of your CSS remains the same */
+.subtitle {
+    text-align: center;
+    color: #a1a1a1;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Search Form */
+.search-form {
+    margin-bottom: 2rem;
+}
+
+.search-wrapper {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search-icon {
+    padding: 15px;
+    color: #fc00ff;
+    font-size: 1.2rem;
+}
+
+.search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+.search-input::placeholder {
+    color: #a1a1a1;
+}
+
+.search-button {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+    padding: 0 30px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.8s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00dbde;
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 219, 222, 0.5);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #00dbde;
+}
+
+.join-date {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+}
+
+/* Stats */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.stat-item {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: scale(1.1);
+}
+
+.stat-label {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fc00ff;
+}
+
+/* Social Links */
+.social-links {
+    padding: 0 25px 25px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link-item:hover {
+    background: rgba(0, 219, 222, 0.1);
+    transform: translateX(10px);
+}
+
+.link-item i {
+    color: #00dbde;
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+.link-text {
+    flex: 1;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    color: #a1a1a1;
+    font-style: italic;
+    position: relative;
+    overflow: hidden;
+}
+
+.stars {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.stars i {
+    color: gold;
+    animation: twinkle 2s infinite;
+    animation-delay: calc(var(--i) * 0.3s);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.repo-list {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: slideUp 0.8s ease-in-out;
+}
+
+.repo-list h3 {
+  margin-bottom: 15px;
+  color: #00dbde;
+  font-size: 1.3rem;
+}
+
+#repos-container {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.repo-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.repo-item:last-child {
+  border-bottom: none;
+}
+
+.repo-name {
+  font-weight: bold;
+  color: #fc00ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-desc {
+  font-size: 0.9rem;
+  color: #a1a1a1;
+  margin: 5px 0;
+}
+
+.repo-stats span {
+  margin-right: 15px;
+  font-size: 0.85rem;
+  color: #00dbde;
+}
